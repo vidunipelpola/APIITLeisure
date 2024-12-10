@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-semibold;
+    }
+
+    h1 {
+        @apply text-4xl mb-6;
+    }
+
+    h2 {
+        @apply text-3xl mb-5;
+    }
+
+    h3 {
+        @apply text-2xl mb-4;
+    }
+
+    p {
+        @apply leading-relaxed mb-4;
+    }
+
+    .btn {
+        @apply font-medium;
+    }
+
+    .nav-link {
+        @apply font-medium;
+    }
+}
+
+[x-cloak] {
+    display: none !important;
+}
